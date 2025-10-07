@@ -1,0 +1,87 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Admin Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="auth-view" class="main-card" hidden>
+    <h1>Lumina Admin</h1>
+    <p class="lead">Sign in with your administrator credentials to manage bookings.</p>
+    <form id="login-form" novalidate>
+      <div>
+        <label for="email">Admin Email</label>
+        <input id="email" name="email" type="email" required autocomplete="username" placeholder="admin@lumina.com">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required autocomplete="current-password" placeholder="********">
+      </div>
+      <div class="feedback" id="login-feedback"></div>
+      <button type="submit">Sign In</button>
+    </form>
+  </main>
+
+  <section id="dashboard-view" class="dashboard-shell" hidden>
+    <header class="dashboard-header">
+      <div>
+        <h1>Bookings Dashboard</h1>
+        <p>View and review guest reservations.</p>
+      </div>
+      <div class="controls">
+        <input type="search" id="search-email" placeholder="Filter by guest email">
+        <select id="status-filter">
+          <option value="">All statuses</option>
+          <option value="PENDING">Pending</option>
+          <option value="CONFIRMED">Confirmed</option>
+          <option value="COMPLETED">Completed</option>
+          <option value="CANCELLED">Cancelled</option>
+        </select>
+        <select id="payment-filter">
+          <option value="">Payment: Any</option>
+          <option value="UNPAID">Unpaid</option>
+          <option value="DEPOSITED">Deposited</option>
+          <option value="PAID">Paid</option>
+          <option value="REFUNDED">Refunded</option>
+        </select>
+        <button type="button" class="logout-btn" id="logout-btn">Sign Out</button>
+      </div>
+    </header>
+
+    <div id="error-banner" class="error-banner"></div>
+    <div id="loading-indicator" class="loading">Loading bookings...</div>
+
+    <div class="table-wrapper" hidden>
+      <table id="bookings-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Guest</th>
+            <th>Contact</th>
+            <th>Room</th>
+            <th>Dates</th>
+            <th>Guests</th>
+            <th>Status</th>
+            <th>Payment</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <div id="empty-state" class="empty-state" hidden>
+      No bookings match the current filters.
+    </div>
+  </section>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
+-->

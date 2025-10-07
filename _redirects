@@ -1,0 +1,4 @@
+# Update the target URL to your deployed API host before deploying.
+# Example syntax:
+# /api/* https://your-api-host.com/:splat 200
+/api/* https://your-backend-domain.com/:splat 200

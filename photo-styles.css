@@ -1,0 +1,141 @@
+/* Photo Styles for Real Images */
+
+/* Replace photo placeholders with real images */
+.photo-placeholder {
+    position: relative;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.photo-placeholder:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.photo-placeholder span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.photo-placeholder:hover span {
+    transform: translateY(0);
+}
+
+/* Room Images */
+.quantum-main { background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.quantum-bedroom { background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.quantum-bathroom { background-image: url('https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.quantum-living { background-image: url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.quantum-view { background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.cyber-main { background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.cyber-bedroom { background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cyber-workspace { background-image: url('https://images.unsplash.com/photo-1565623006066-82f23c79210b?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cyber-lounge { background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cyber-balcony { background-image: url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.neo-main { background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.neo-bedroom { background-image: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-desk { background-image: url('https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-bathroom { background-image: url('https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-window { background-image: url('https://images.unsplash.com/photo-1494336934272-f0efcedfc8d7?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+/* Amenity Images */
+.pool-main { background-image: url('https://images.unsplash.com/photo-1567552379232-c32f3d64d251?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.pool-night { background-image: url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.pool-deck { background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.pool-lounge { background-image: url('https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.gym-main { background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.gym-cardio { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.gym-weights { background-image: url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.gym-vr { background-image: url('https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.spa-main { background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.spa-treatment { background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.spa-meditation { background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.spa-relaxation { background-image: url('https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.lounge-main { background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.lounge-seating { background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.lounge-terrace { background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.lounge-night { background-image: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+/* Restaurant Images */
+.quantum-kitchen-main { background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.quantum-kitchen-chef { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.quantum-kitchen-dish { background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.quantum-kitchen-wine { background-image: url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.cyber-cafe-main { background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.cyber-cafe-counter { background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cyber-cafe-seating { background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cyber-cafe-pastries { background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.neo-sushi-main { background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.neo-sushi-chef { background-image: url('https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-sushi-platter { background-image: url('https://images.unsplash.com/photo-1583623025817-d180a2221d0a?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-sushi-sake { background-image: url('https://images.unsplash.com/photo-1536599424071-0b215a388ba7?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.rooftop-garden-main { background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.rooftop-garden-greenhouse { background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.rooftop-garden-herbs { background-image: url('https://images.unsplash.com/photo-1536882240095-0379873feb4e?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.rooftop-garden-sunset { background-image: url('https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+/* Additional Service Images */
+.business-center { background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.concierge { background-image: url('https://images.unsplash.com/photo-1556740758-90de374c12ad?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.valet { background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.laundry { background-image: url('https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.room-service { background-image: url('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.grab-go { background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.private-dining { background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.cooking-class { background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+/* Gallery Images */
+.exterior-night { background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.exterior-day { background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.exterior-entrance { background-image: url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.lobby-atrium { background-image: url('https://images.unsplash.com/photo-1543968332-f99478b1ebdc?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.quantum-suite-bedroom { background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.cyber-deluxe-living { background-image: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-standard-room { background-image: url('https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.bathroom-luxury { background-image: url('https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.infinity-pool-sunset { background-image: url('https://images.unsplash.com/photo-1567552379232-c32f3d64d251?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.gym-equipment { background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.spa-treatment-room { background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.sky-lounge-bar { background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.quantum-kitchen-dining { background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.cyber-cafe-interior { background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.neo-sushi-counter { background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.rooftop-garden-dining { background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.conference-room { background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop'); background-size: cover; background-position: center; }
+.ballroom { background-image: url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.wedding-setup { background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.business-meeting { background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.meditation-pod { background-image: url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+
+.vr-tour { background-image: url('https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.ar-preview { background-image: url('https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }
+.live-stream { background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop'); background-size: cover; background-position: center; }

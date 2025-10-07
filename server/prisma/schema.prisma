@@ -1,0 +1,153 @@
+// Prisma schema for Lumina Hotel backend
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PENDING
+  DEPOSITED
+  PAID
+  REFUNDED
+}
+
+enum GalleryCategory {
+  EXTERIOR
+  ROOM
+  AMENITY
+  DINING
+  EVENT
+  OTHER
+}
+
+enum DiningType {
+  FINE_DINING
+  CAFE
+  BAR
+  CASUAL
+  ROOM_SERVICE
+}
+
+enum AmenityCategory {
+  WELLNESS
+  FITNESS
+  BUSINESS
+  LEISURE
+  SERVICE
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  role      UserRole  @default(USER)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  bookings  Booking[]
+}
+
+model Room {
+  id          Int       @id @default(autoincrement())
+  name        String
+  slug        String    @unique
+  description String
+  price       Decimal   @db.Decimal(10, 2)
+  sizeSqm     Int
+  occupancy   Int
+  images      String[]
+  highlights  String[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  bookings    Booking[]
+}
+
+model Amenity {
+  id          Int             @id @default(autoincrement())
+  name        String
+  description String
+  category    AmenityCategory
+  hours       String?
+  images      String[]
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+}
+
+model DiningVenue {
+  id          Int         @id @default(autoincrement())
+  name        String
+  type        DiningType
+  floor       Int?
+  hours       String
+  description String
+  menuUrl     String?
+  images      String[]
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+}
+
+model GalleryItem {
+  id          Int             @id @default(autoincrement())
+  title       String
+  category    GalleryCategory
+  imageUrl    String
+  caption     String?
+  createdAt   DateTime        @default(now())
+}
+
+model Event {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  date        DateTime
+  venue       String
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+}
+
+model Testimonial {
+  id          Int      @id @default(autoincrement())
+  guestName   String
+  content     String
+  rating      Int
+  createdAt   DateTime @default(now())
+}
+
+model Booking {
+  id            Int           @id @default(autoincrement())
+  roomId        Int
+  userId        Int?
+  customerName  String
+  customerEmail String
+  customerPhone String?
+  checkIn       DateTime
+  checkOut      DateTime
+  guests        Int
+  totalPrice    Decimal       @db.Decimal(10, 2)
+  status        BookingStatus @default(PENDING)
+  paymentStatus PaymentStatus @default(PENDING)
+  notes         String?
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  room          Room          @relation(fields: [roomId], references: [id])
+  user          User?         @relation(fields: [userId], references: [id])
+}

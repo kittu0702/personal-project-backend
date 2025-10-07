@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Lumina Hotel</title>
+    <link rel="stylesheet" href="hotel-styles.css">
+    <link rel="stylesheet" href="pages-styles.css">
+    <link rel="stylesheet" href="photo-styles.css">
+    <link rel="stylesheet" href="theme-neon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Light Beam Background Animation -->
+    <div class="light-beam-bg">
+        <div class="light-beam"></div>
+        <div class="beam-glow"></div>
+        <div class="beam-aura"></div>
+        <div class="beam-soft-glow"></div>
+        
+        <!-- Light Pooling at Bottom -->
+        <div class="light-pool-bottom">
+            <div class="pool-main"></div>
+            <div class="pool-wedge left-wedge"></div>
+            <div class="pool-wedge right-wedge"></div>
+            <div class="pool-flow-left"></div>
+            <div class="pool-flow-right"></div>
+            <div class="pool-overflow"></div>
+        </div>
+        
+        <!-- Grid Background -->
+        <div class="grid-background"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>LUMINA</h1>
+                    <span>HOTEL</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="dining.html">Dining</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="index.html#contact" class="book-btn">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Visual Experience</h1>
+            <p class="page-subtitle">Explore the beauty and innovation of Lumina Hotel</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons" data-gallery-filters>
+                <p class="loading">Building filters...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section class="main-gallery">
+        <div class="container">
+            <div data-gallery-grid class="gallery-grid">
+                <p class="loading">Loading gallery...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spotlight Testimonials -->
+    <section class="gallery-testimonials">
+        <div class="container">
+            <h2 class="section-title">Guest Perspectives</h2>
+            <div data-gallery-testimonials class="testimonials-grid">
+                <p class="loading">Loading guest stories...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour Section -->
+    <section class="virtual-tour">
+        <div class="container">
+            <h2 class="section-title">Virtual Experience</h2>
+            <div class="tour-grid">
+                <div class="tour-card">
+                    <div class="photo-placeholder vr-tour">
+                        <span>360° Virtual Tour</span>
+                    </div>
+                    <h3>360° Hotel Tour</h3>
+                    <p>Explore every corner of Lumina Hotel from the comfort of your home</p>
+                    <button class="btn-secondary">Start Virtual Tour</button>
+                </div>
+                <div class="tour-card">
+                    <div class="photo-placeholder ar-preview">
+                        <span>AR Room Preview</span>
+                    </div>
+                    <h3>AR Room Preview</h3>
+                    <p>Use your phone to preview rooms in augmented reality</p>
+                    <button class="btn-secondary">Launch AR Preview</button>
+                </div>
+                <div class="tour-card">
+                    <div class="photo-placeholder live-stream">
+                        <span>Live Stream</span>
+                    </div>
+                    <h3>Live Webcams</h3>
+                    <p>Watch real-time views from our rooftop and lobby areas</p>
+                    <button class="btn-secondary">View Live Stream</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>LUMINA HOTEL</h3>
+                    <p>Where the future meets luxury</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#careers">Careers</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lumina Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="api-client.js"></script>
+    <script src="gallery-page.js"></script>
+    <script src="hotel-script.js"></script>
+</body>
+</html>
