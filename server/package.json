@@ -10,7 +10,8 @@
     "lint": "eslint --ext .ts src",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:dev": "prisma migrate dev",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@fastify/cors": "^10.0.0",
