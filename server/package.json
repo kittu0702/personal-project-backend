@@ -2,11 +2,10 @@
   "name": "lumina-hotel-backend",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc -p tsconfig.build.json",
-    "start": "node --experimental-specifier-resolution=node dist/index.js",
+    "start": "node dist/index.js",
     "lint": "eslint --ext .ts src",
     "prisma:migrate": "prisma migrate deploy",
     "prisma:dev": "prisma migrate dev",
