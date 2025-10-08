@@ -10,8 +10,14 @@ declare module 'fastify' {
     hashPassword(password: string): Promise<string>;
     verifyPassword(password: string, hash: string): Promise<boolean>;
   }
+}
 
-  interface FastifyRequest {
+declare module '@fastify/jwt' {
+  interface FastifyJWT {
+    payload: {
+      userId: number;
+      role: UserRole;
+    };
     user: {
       userId: number;
       role: UserRole;
